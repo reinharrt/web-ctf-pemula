@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sederhana - Flag Tersembunyi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-second {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #004080;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-second:hover {
+            background-color: #218838;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .error {
+            border-color: red;
+            background-color: #f8d7da;
+            color: red;
+        }
+        .success {
+            border-color: green;
+            background-color: #d4edda;
+            color: green;
+        }
+        #hint {
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang Peserta EDUJA</h1>
+        <p>Untuk menemukan sesuatu yang menarik, coba kalian klik tombol di bawah ini!</p>
+        <button class="btn" onclick="showHint()">Click To View Hint</button>
+        <p id="hint">Source Code<br></p>
+        </form>
+    </div>
+    <button class="btn-second" onclick="window.location.href='../challenge.html'">Kembali ke Challenge</button>
+    <script>
+        function showHint() {
+            var hint = document.getElementById('hint');
+            hint.style.display = 'block'; 
+        }
+    </script>
+
+    <!-- Flag sebenarnya ada di dalam komentar HTML di bawah ini -->
+    <!-- SIJA{keren_keren2_4} -->
+</body>
+</html>

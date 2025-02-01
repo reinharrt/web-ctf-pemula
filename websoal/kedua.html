@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Flag Tersembunyi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-second {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #004080;
+            text-decoration: none;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-second:hover {
+            background-color: #218838;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid #ccc;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        #hint {
+            color: green;
+            display: none;
+        }
+        .hint-container {
+            margin-top: 20px;
+        }
+        #explanation {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 5px;
+            color: #856404;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat datang di Dashboard</h1>
+        <p>Untuk menemukan sesuatu yang menarik, coba kalian masukkan input di bawah ini!</p>
+
+        <form id="form">
+            <input type="text" id="input" placeholder="Masukkan sesuatu" />
+            <input type="submit" class="btn" value="Kirim" />
+        </form>
+
+        <div class="hint-container">
+            <p id="hint">"revealFlag();" dan Console Pada Browser</p>
+        </div>
+
+        <div id="hiddenFlag" style="display:none;">U0lKQXtvMTFfa2VyM25ueTRfMGl9</div>
+
+        <div id="explanation">
+            <strong>Pada kegiatan ini, kamu akan belajar bagaimana cara mengakses informasi yang tersembunyi di dalam sebuah website.</strong><br><br>
+            <strong>Langkah pertama:</strong> Kamu bisa mencoba memasukkan sesuatu pada kolom input dan mengklik tombol "Kirim". Petunjuk akan muncul di bawah.<br><br>
+            <strong>Langkah kedua:</strong> Setelah petunjuk muncul, coba pikirkan cara untuk menampilkan informasi tersembunyi yang ada di website ini. Di sini, kamu akan belajar sedikit tentang cara kerja <em>JavaScript injection</em>.<br><br>
+            <strong>Petunjuk:</strong> Cobalah untuk berpikir tentang cara "menyusup" ke dalam website menggunakan JavaScript. Ada cara untuk membuka informasi yang terkunci di balik kode website.<br><br>
+            Semangat! Cobalah untuk mengeksplorasi dan memahami cara kerjanya. Kamu bisa bertanya jika kesulitan!
+        </div>
+        <button class="btn-second" onclick="window.location.href='../challenge.html'">Kembali ke Challenge</button>
+    </div>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(e) {
+            e.preventDefault();  
+            const input = document.getElementById('input').value;
+            document.getElementById('hint').style.display = 'block';  
+
+            document.getElementById('input').value = '';
+        });
+
+        function revealFlag() {
+            const encodedFlag = document.getElementById('hiddenFlag').textContent;
+            const decodedFlag = atob(encodedFlag); 
+            alert('Flag Terungkap: ' + decodedFlag);  
+        }
+
+        window.revealFlag = revealFlag;
+    </script>
+</body>
+</html>

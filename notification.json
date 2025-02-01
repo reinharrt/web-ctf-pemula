@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Warning!",
+        "message": "Kalo barangkali ada yang akses web ini, hehe. Kemungkinan web ini ga akan long last, dan bakal di takedown cuman ga sekarang-sekarang.",
+        "type": "warning"
+    },
+    {
+        "title": "Stop Dulu!",
+        "message": "Kalo udah merasa jago dan bosen, cek tab guide buat lanjut ngulik di PicoCTF , happy ngulik semua!!",
+        "type": "normal"
+    } 
+]

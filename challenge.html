@@ -1,0 +1,154 @@
+<!--Hayo Nyari Apa Disini???-->
+<!--Balik Lagi Sana-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta chtfarset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Platform - Challenge</title>
+    <link rel="icon" href="/foto/kucing.png" type="image/png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/foto/kucing.png" alt="CTF Logo">
+            <a href="index.html">CTF Platform</a>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="challenge.html">Challenge</a>
+            <a href="guide.html">Guide</a>
+        </div>
+    </nav>
+    <div id="notification-container" class="notification-container"></div>
+    <div class="container">
+        <h1>Challenges</h1>
+        <div class="card">
+            <h2>Aturan Main</h2>
+            <li>Jangan bagi bagi flag!!</li>
+            <li>Boleh ngajarin, tapi jangan ngasih flag ya!!</li>
+            <li>Fokus ke soal, karena disitu kunci kalian bisa nemu flag nya.</li>
+            <li>Jangan lupa ngedip</li>
+            <li>Semua flag format-nya SIJA{flag_nya}, kecuali satu soal. Nanti juga ketemu</li>
+        </div>
+        <div class="card">
+            <h2>Web Exploitation</h2>
+            <div class="card">
+                <h3>Question 1: Pemula</h3>
+                <p>Description: Fokus ke soal, dan cari tata caranya, semangat!!.</p>
+                <a href="websoal/kesatu.html" class="button-link">
+                    Masuk Ke Website-nya
+                </a>
+                <form class="challenge-form" data-id="web1" data-answer="U0lKQXtrZXJlbl9rZXJlbjJfNH0=">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 2: Dashboard - "Mencari Flag dengan JavaScript Injection"</h3>
+                <p>Description: Kamu mengakses sebuah dashboard untuk peserta. Halaman ini memiliki beberapa tombol dan area untuk memasukkan input. Flag disembunyikan dalam elemen yang hanya bisa diakses melalui JavaScript injection.</p>
+                <a href="websoal/kedua.html" class="button-link">
+                    Masuk Ke Website-nya
+                </a>
+                <form class="challenge-form" data-id="web2" data-answer="U0lKQXtvMTFfa2VyM25ueTRfMGl9">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 3: Address Bar Browser</h3>
+                <p>Description:  Di halaman ini, kalian akan menemui sebuah file yang tampaknya biasa saja, tetapi ada sesuatu yang tersembunyi di dalamnya. Tugas kalian adalah menemukan flag yang tersembunyi dalam sistem ini dengan cara mengganti nama file di address bar browser kalian.
+                Halaman ini memberikan petunjuk tentang bagaimana cara mengakses file lain yang tersembunyi di sistem ini. Tidak ada yang langsung terlihat, jadi kalian perlu berpikir tentang struktur URL dan bagaimana nama file dapat mempengaruhi hasil yang kalian dapatkan.</p>
+                <a href="websoal/ketiga.html" class="button-link">
+                    Masuk Ke Website-nya
+                </a>
+                <form class="challenge-form" data-id="web3" data-answer="U0lKQXttdWxhMV9qNGcwX25paH0=">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Cryptography</h2>
+            <div class="card">
+                <h3>Question 1: Caesar Cipher (Shift 3)</h3>
+                <p>Description: Pada soal ini, kalian akan mengenal metode enkripsi sederhana yang disebut Caesar Cipher. Di metode ini, setiap huruf dalam teks digeser beberapa posisi dalam alfabet.</p>
+                <a href="https://cryptii.com/pipes/caesar-cipher" class="button-link">
+                    Refrensis Decoder
+                </a><br><br>
+                <li>
+                    Tugas kalian adalah decode teks yang terenkripsi menggunakan Caesar Cipher dengan shift 3.
+                </li>
+                <li>
+                    Teks yang di decode adalah:<mark>VLMD{o4qmxw_w3uxv}</mark> 
+                </li><br><br>
+                <form class="challenge-form" data-id="crypto1" data-answer="U0lKQXtsNG5qdXRfdDNydXN9">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 2: Alphabetical Subtitution</h3>
+                <p>Description: Pada soal ini, kalian akan menggunakan teknik Substitution Cipher di mana setiap huruf dalam pesan asli digantikan oleh huruf lain berdasarkan aturan tertentu, untuk lebih mudah nya kamu bisa menggunakan decoder seperti soal sebelumnya. Cari sendiri ya, teliti kuncinya di soal soal. Kamu bisa google aja nama decoder nya.</p>
+                <li>Yang harus kamu decode adalah: <mark>HRQZ{4h1p_zh1p}</mark></li>
+                <form class="challenge-form" data-id="crypto2" data-answer="U0lKQXs0czFrX2FzMWt9">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 3: </h3>
+                <p><mark>.--- .- -.. .. / .- -. .- -.- / .--. .-. .- -- ..- -.- .- / .... . .... .</mark></p>
+                <form class="challenge-form" data-id="crypto3" data-answer="SkFESSBBTkFLIFBSQU1VS0EgSEVIRQ==">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 4: Hex Decoder</h3>
+                <p>Description: Pada soal ini, kalian akan belajar mengenai encoding menggunakan Hexadecimal (heksadesimal), yaitu sistem bilangan berbasis 16. Seperti soal nomer 2, kalian harus mencari sendiri encoder-nya.</p>
+                <p>Yang harus kalian decode adalah: </p>
+                <p><mark>53494A417B77346A61725F6D346E757331345F74336D7034746E79615F73346C34685F64616E5F6C7570617D</mark></p>
+                <form class="challenge-form" data-id="crypto4" data-answer="U0lKQXt3NGphcl9tNG51czE0X3QzbXA0dG55YV9zNGw0aF9kYW5fbHVwYX0=">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Forensic</h2>
+            <div class="card">
+                <h3>Question 1: Lokasi Rahasia</h3>
+                <img src="/foto/smktercinta.jpg" alt="SMK Tercinta" width="512" height="256">
+                <p>Description: Tau kan ini dimana?, hint nya adalah:.</p>
+                <li>Format Flag: SIJA{PLUS CODES}</li>
+                <li>Maps</li>
+                <form class="challenge-form" data-id="forensic1" data-answer="U0lKQXszR1hRKzM5fQ==">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+            <div class="card">
+                <h3>Question 2: Explore Lagi</h3>
+                <p>Description: Hint nya ada di Whatsapp dan Jangan Lupa di Decode</p>
+                <form class="challenge-form" data-id="forensic2" data-answer="U0lKQXtoZWhlfQ==">
+                    <input type="text" name="answer" placeholder="SIJA{flag_here}">
+                    <button type="submit">Submit</button>
+                    <div class="feedback"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+</body>
+</html>

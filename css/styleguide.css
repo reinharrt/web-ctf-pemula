@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+    color: #004080;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+nav {
+    background-color: #0056b3;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #cce7ff;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.main a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #004080;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.main a:hover {
+    background-color: #004080;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    z-index: 1000;
+}
+
+.notification {
+    position: relative; 
+    background-color: #ffffff;
+    border-left: 5px solid #004080;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #004080;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.notification.warning {
+    border-left-color: #d9534f; 
+    color: #d9534f;
+}
+
+.notification h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.notification p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.notification .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 1.2rem;
+    color: #aaa;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.notification .close-btn:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-material {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #0056b3;
+}
+
+.button-link {
+    padding: 0.6rem 1.2rem;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+.main-material img {
+    max-width: 300px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.main-material .content h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.main-material .content p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0056b3;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 8px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    padding: 15px;
+}
+
+.card .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card .card-content p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
